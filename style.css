@@ -119,7 +119,7 @@ header video {
   margin: 100px auto 100px;
   border: 5px solid rgb(159, 92, 226);
   border-radius: 50%;
-  background-image: url(images/img_5.jpeg);
+  background-image: url('images/img_5.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
