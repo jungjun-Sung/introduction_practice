@@ -4,7 +4,7 @@ let count = 1;
 
 //버튼 클릭시 배경화면 변경
 mainBtn.addEventListener('click', () => {
-  if (count < 5) {
+  if (count < 2) {
     count++;
   } else {
     count = 1;
