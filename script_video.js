@@ -10,5 +10,5 @@ mainBtn.addEventListener('click', () => {
     count = 1;
   }
 
-  video.src = '/images/video_' + count + '.mp4';
+  video.src = './images/video_' + count + '.mp4';
 });
