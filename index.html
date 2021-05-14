@@ -21,7 +21,7 @@
   <body>
     <header>
       <div class="video_bg">
-        <video src="images/video_5.mp4" autoplay muted loop></video>
+        <video id="video" src="images/video_1.mp4" autoplay muted loop></video>
       </div>
       <div class="nav_box">
         <nav class="nav">
@@ -29,13 +29,28 @@
             <i class="fab fa-weebly"></i>
           </div>
           <ul class="nav_menu">
-            <li class="nav_items"><a href="#pi">Home</a></li>
+            <li class="nav_items"><a href="#pi">Information</a></li>
             <li class="nav_items"><a href="#about">About</a></li>
+            <li class="nav_items"><a href="#reviewBtn">Review</a></li>
           </ul>
+          <button id="hamBtn" class="hamBtn">☰</button>
         </nav>
+        <aside class="aside aside_bg1" id="aside">
+          <div class="aside aside_bg2">
+            <div class="aside aside_bg3">
+              <!-- <i class="fas fa-times close" id="close"></i> -->
+              <i class="close" id="close">X</i>
+              <ul class="aside_nav_menu">
+                <li class="aside_nav_items"><a href="#">Home</a></li>
+                <li class="aside_nav_items"><a href="#">About</a></li>
+                <li class="aside_nav_items"><a href="#">Review</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
         <div class="main_box">
           <div class="main_imgbox">
-            <div class="main_img"></div>
+            <div class="main_img" id="main_img"></div>
           </div>
           <div class="main_textWrapper">
             <h3 class="main_title">
@@ -46,7 +61,10 @@
               motto. <br />To follow this quote, I will focus on the stuff that
               I am doing.
             </p>
-            <button class="main_btn">Click</button>
+            <button class="main_btn" id="main_btn">
+              VIDEO CHANGE
+              <div></div>
+            </button>
           </div>
         </div>
       </div>
@@ -103,7 +121,38 @@
           </div>
         </div>
       </div>
+      <div class="panelBg">
+        <div id="panel" class="panel_container">
+          <a href="#" class="rating_link" id="ratingLink"
+            >How satisfied are you with our customer support performence?</a
+          >
+          <div class="ratings-container">
+            <div class="rating">
+              <img src="/images/smiling.svg" alt="Satisfied" />
+              <small>Satisfied</small>
+            </div>
+            <div class="rating">
+              <img src="/images/neutral.svg" alt="Neutral" />
+              <small>Neutral</small>
+            </div>
+            <div class="rating">
+              <img src="/images/sad.svg" alt="Unhappy" />
+              <small>Unhappy</small>
+            </div>
+          </div>
+          <button class="reviewBtn" id="reviewBtn">Send Review</button>
+        </div>
+      </div>
     </div>
-    <footer></footer>
+
+    <footer>
+      <a href="" id="backToTop" class="backToTop"
+        ><i class="fas fa-chevron-up"></i
+      ></a>
+    </footer>
+    <script src="./script/script_hamBtn.js"></script>
+    <script src="./script/script_backToTop.js"></script>
+    <script src="./script/script_review.js"></script>
+    <script src="./script/script_video.js"></script>
   </body>
 </html>
