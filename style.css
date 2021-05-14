@@ -100,6 +100,14 @@ header video {
   opacity: 0;
   transform: translateX(58%);
 }
+.nav_items .nav_info:before {
+  width: 50px;
+  transform: translateX(95%);
+}
+.nav_items .nav_review:before {
+  width: 85px;
+  transform: translateX(60%);
+}
 .nav_items a:hover {
   color: rgb(159, 92, 226);
   transition: all 0.2s ease-in;
